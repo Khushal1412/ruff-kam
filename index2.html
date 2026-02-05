@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+button:hover {
+    background: #03a9f4;
+}
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome</h1>
+        <p id="text">Click the button</p>
+
+        <button onclick="changeText()">Click Me</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function changeText() {
+    document.getElementById("text").innerHTML =
+        "JavaScript is working!";
+}
+</script>
+
+</html>
